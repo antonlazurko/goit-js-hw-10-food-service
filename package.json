@@ -1,0 +1,26 @@
+{
+  "name": "goit-js-hw-10-food-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonlazurko/goit-js-hw-10-food-service.git"
+  },
+  "keywords": [],
+  "author": "anton <YOUR_EMAILnpm config set init.author.name YOUR_NAME\nnpm config set init.author.email YOUR_EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonlazurko/goit-js-hw-10-food-service/issues"
+  },
+  "homepage": "https://github.com/antonlazurko/goit-js-hw-10-food-service#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "dependencies": {}
+}
