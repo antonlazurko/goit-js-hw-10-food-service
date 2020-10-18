@@ -16,11 +16,16 @@ const checkbox = document.querySelector('#theme-switch-toggle')
 const body = document.querySelector('body')
 checkbox.addEventListener('click', onCheckboxClick)
 const savedData = localStorage.getItem('my-data');
-// console.log('savedData', savedData);
 const parsedData = JSON.parse(savedData);
-function storageChecked() { if (parsedData.checked) { checkbox.checked = parsedData.checked }}
+function storageChecked() {
+    if (parsedData)
+    {
+        checkbox.checked = parsedData.checked;
+    }
+}
 storageChecked()
-function storageTheme() { if (parsedData.theme) { body.classList.add(parsedData.theme) } }
+function storageTheme()
+{ if (parsedData) { body.classList.add(parsedData.theme) } }
 storageTheme()
 function onCheckboxClick() {
     body.classList.toggle(Theme.DARK)
